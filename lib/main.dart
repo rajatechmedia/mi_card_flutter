@@ -41,54 +41,40 @@ class MyApp extends StatelessWidget {
                     fontWeight: FontWeight.bold,
                   ),
                 ),
-                Container(
-                  color: Colors.white,
-                  padding: const EdgeInsets.all(10.0),
+                Card(
                   margin: const EdgeInsets.symmetric(
                       vertical: 10.0, horizontal: 25.0),
-                  child: Row(
-                    children: [
-                      const Icon(
-                        Icons.phone,
-                        color: Colors.teal,
+                  child: ListTile(
+                    leading: const Icon(
+                      Icons.phone,
+                      color: Colors.teal,
+                    ),
+                    title: Text(
+                      '+91 8919026345',
+                      style: TextStyle(
+                        fontSize: 20.0,
+                        color: Colors.teal.shade900,
+                        fontFamily: 'SourceSansPro',
                       ),
-                      const SizedBox(
-                        width: 10.0,
-                      ),
-                      Text(
-                        '+91 8919026345',
-                        style: TextStyle(
-                          fontFamily: 'SourceSansPro',
-                          fontSize: 20.0,
-                          color: Colors.teal[900],
-                        ),
-                      ),
-                    ],
+                    ),
                   ),
                 ),
-                Container(
-                  color: Colors.white,
-                  padding: const EdgeInsets.all(10.0),
+                Card(
                   margin: const EdgeInsets.symmetric(
                       vertical: 10.0, horizontal: 25.0),
-                  child: Row(
-                    children: [
-                      const Icon(
-                        Icons.email,
-                        color: Colors.teal,
+                  child: ListTile(
+                    leading: const Icon(
+                      Icons.email,
+                      color: Colors.teal,
+                    ),
+                    title: Text(
+                      'muniraja0799@gmail.com',
+                      style: TextStyle(
+                        fontSize: 20.0,
+                        color: Colors.teal.shade900,
+                        fontFamily: 'SourceSansPro',
                       ),
-                      const SizedBox(
-                        width: 10.0,
-                      ),
-                      Text(
-                        'muniraja0799@gmail.com',
-                        style: TextStyle(
-                          fontFamily: 'SourceSansPro',
-                          fontSize: 20.0,
-                          color: Colors.teal[900],
-                        ),
-                      ),
-                    ],
+                    ),
                   ),
                 ),
               ],
